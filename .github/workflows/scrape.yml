@@ -1,0 +1,32 @@
+name: Scrape latest data
+
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron:  '5,26,47 * * * *'
+
+jobs:
+  scheduled:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out this repo
+      uses: actions/checkout@v2
+    - name: Fetch latest data
+      run: |-
+        curl -L --insecure "https://www.tcsp.cr.gov.hk/open-data/licensees.csv" > licensees.csv
+        curl -L --insecure "https://www.cr.gov.hk/mlr/docs/Appointed_Third_Parties.csv" > Appointed_Third_Parties.csv
+        curl -L --insecure "https://www.cr.gov.hk/datagovhk/psi/ml_licensees.csv" > ml_licensees.csv
+        curl -L --insecure "https://www.cr.gov.hk/datagovhk/psi/ml_list1.csv" > ml_list1.csv
+        curl -L --insecure "https://www.cr.gov.hk/datagovhk/psi/ml_list2.csv" > ml_list2.csv
+        curl -L --insecure "https://www.cr.gov.hk/datagovhk/psi/ml_list3.csv" > ml_list3.csv
+        curl -L --insecure "https://www.cr.gov.hk/datagovhk/psi/stat_name.csv" > stat_name.csv
+        curl -L --insecure "https://www.cr.gov.hk/datagovhk/psi/replace_name.csv" > replace_name.csv
+    - name: Commit and push if it changed
+      run: |-
+        git config user.name "Automated"
+        git config user.email "actions@users.noreply.github.com"
+        git add .
+        timestamp=$(date -u)
+        git commit -m "Latest data: ${timestamp}" || exit 0
+        git push
