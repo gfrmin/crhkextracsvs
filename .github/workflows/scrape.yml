@@ -22,6 +22,7 @@ jobs:
         curl -L --insecure "https://www.cr.gov.hk/datagovhk/psi/ml_list3.csv" > ml_list3.csv
         curl -L --insecure "https://www.cr.gov.hk/datagovhk/psi/stat_name.csv" > stat_name.csv
         curl -L --insecure "https://www.cr.gov.hk/datagovhk/psi/replace_name.csv" > replace_name.csv
+        curl -L --insecure "https://eservices.customs.gov.hk/MSOS/wsrh/003s1?request_locale=en&format=csv" > msos.csv
     - name: Commit and push if it changed
       run: |-
         git config user.name "Automated"
