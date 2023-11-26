@@ -65,9 +65,9 @@ $(function(){
 <script>
 $(function(){
 	/*<input type="hidden" name="struts.token.name" value="token" />
-<input type="hidden" name="token" value="LHTCOQFWI6357230GMB6KUD867DXS9BV" />*/
+<input type="hidden" name="token" value="L5WBPUVCN2ZF19M887549EUEOWJQFJ4A" />*/
 	
-	var token = "LHTCOQFWI6357230GMB6KUD867DXS9BV";
+	var token = "L5WBPUVCN2ZF19M887549EUEOWJQFJ4A";
 	
 	$("form").append('<input type="hidden" name="struts.token.name" value="token" />');
 	$("form").append('<input type="hidden" name="token" value="'+token+'"/>');	
@@ -272,7 +272,7 @@ function swapFontImage() {
 
 	<p>
 		<span class="contenttext">
-			There was a temporary problem when processing your request, please try again later. If problem persists, please record this reference ID (ID: 1701031718580-3201) and report the problem to us.
+			There was a temporary problem when processing your request, please try again later. If problem persists, please record this reference ID (ID: 1701035317842-6585) and report the problem to us.
 		</span>
 	</p>
 	<p>
