@@ -1,62 +1,311 @@
-﻿<html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>金錢服務經營者牌照系統</title>	
-</head>
-<body>
-<table width="970" border="0" cellspacing="0" cellpadding="0" style="background-image:url(/SCG/MSOS/custom_header_bg.gif); background-repeat:repeat-x">
-  	<tbody><tr>
-    	<td width="612" height="83" valign="top">
-    		<a href="https://eservices.customs.gov.hk/MSOS/index" target="_self"><img src="/SCG/MSOS/msos_header_logo.gif" border="0" alt="Money Service Operators Licensing System" title="Money Service Operators Licensing System" /></a>
-    	</td>
-    	<td>
-    		<table width="100%" height="83" border="0" cellspacing="0" cellpadding="0">
-    		<tbody><tr>
-        		<td height="60" align="right">
-        			<a href="http://www.brandhk.gov.hk/brandhk/" target="_blank">
-        			<img src="/SCG/MSOS/brandhk.gif" width="190" height="60" border="0" alt="Brand Hong Kong - Asia\&#39;s world city" title="Brand Hong Kong - Asia\&#39;s world city" /></a>
-        		</td>
-   		 	</tr>
-			</tbody></table>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<p> 
-			The Money Service Operators Licensing System is under maintenance. Online services will resume on 26.11.2023 23:30. For enquiries, please contact C&amp;ED office at the following address and contact numbers:
-			<BR/>
-			<BR/>Customs and Excise Department
-			<BR/>Money Service Supervision Bureau
-			<BR/>Units 402-403, 4/F, Centre Parc,
-			<BR/>11 Sheung Yuet Road, Kowloon Bay, Kowloon.
-			<BR/>
-			<BR/>Tel :  	(852) 3742 7742　(during office hours)
-			<BR/>Fax :  	(852) 3742 7758
- 			</p> 
-			<p> 
-			香港海關金錢服務經營者牌照系統正進行維護。系統將於2023年11月26日 23時30分恢復服務。如有查詢，請聯絡以下香港海關辦公室：
-			<BR/>
-			<BR/>香港海關
-			<BR/>金錢服務監理科
-			<BR/>九龍九龍灣常悅道11號新明大廈4樓402-403室
-			<BR/>
-			<BR/>電話 :  	(852) 3742 7742　（辦公時間內）
-			<BR/>傳真 :  	(852) 3742 7758
-			</p> 
-			<p> 
-			香港海关金钱服务经营者牌照系统正进行维护。系统将于2023年11月26日 23时30分恢复服务。如有查询，请联络以下香港海关办公室：
-			<BR/>
-			<BR/>香港海关
-			<BR/>金钱服务监理科
-			<BR/>九龙九龙湾常悦道11号新明大厦4楼402-403室
-			<BR/>
-			<BR/>电话 :  	(852) 3742 7742　（办公时间内）
-			<BR/>传真 :  	(852) 3742 7758
-			</p> 
-		</td>
-	</tr>
-</tbody></table>
+
+
+	<!DOCTYPE html>
+
+	<html lang="zh-hk">
+	
+	<head>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+			<meta name="keywords" content="Customs and Excise Department (Money Service Operators Licensing System ) - Money Service Operators Licensing System "> 
+	
+       		<meta name="description" content="Money Service Operators Licensing System provided by the Hong Kong Customs and Excise Department.  Contents include Index Page, Online Functions for Money Service Operators (MSOs), Create User Account, User Login, Licensed Money Service Operators, Guidelines, Licensing Issues, Enforcement News , Legislation , Online Demonstration, Create User Account, Form 1 MSO Licence Application, Resubmit Missing Documents, Form 2 Application for Renewal of a Money Service Operator (MSO) Licence, Form 4 Application for Approval in respect of Persons Proposing to become Licensees Partners / Directors / Ultimate Owners, Form 5 Application to add New Premises used for the operation of a Money Service, Submit Periodic Return for Statement of Transaction, Forms, Publications and Notices, Links, FAQs, Contact us, Important Notice, Security Statement for the Money Service Operators Licensing System (MSOS)">
+			
+				<title>Money Service Operators Licensing System </title>
+			
+  	
+<!-- Style sheet-->
+<link rel="stylesheet" href="/MSOS/css/reset.css" type="text/css">
+<link rel="stylesheet" href="/MSOS/css/msosStyle.css" type="text/css">
+<link rel="stylesheet" href="/MSOS/lib/jquery-ui-1.13.2.custom/jquery-ui.min.css" type="text/css">
+<link rel="stylesheet" href="/MSOS/lib/jquery.jqGrid-4.15.5/css/ui.jqgrid.min.css" type="text/css">
+<link rel="stylesheet" href="/MSOS/css/jquery.qtip.css" type="text/css">
+<link rel="stylesheet" href="/MSOS/css/overrideGridStyle.css" type="text/css">
+<link rel="stylesheet" href="/MSOS/css/overrideUiStyle.css" type="text/css">
+<link rel="stylesheet" href="/MSOS/css/contentMenu.css" type="text/css">
+
+<link rel="stylesheet" href="/MSOS/css/bootstrap.min.css" type="text/css">
+
+<!--[if IE]>
+	<style type="text/css">
+		legend {float:left;}
+	</style>
+<![endif]-->
+
+<script>var base='/MSOS';</script>
+<script src="/MSOS/js/security.js"></script>
+<!-- JQuery Library-->
+
+<script src="/MSOS/js/jquery-3.6.4.js"></script>
+<script src="/MSOS/js/jquery-migrate-3.4.0.js"></script>
+<script src="/MSOS/lib/jquery-ui-1.13.2.custom/jquery-ui.min.js"></script>
+<script src="/MSOS/lib/jquery.jqGrid-4.15.5/js/i18n/grid.locale-en.js"></script>        
+<script src="/MSOS/lib/jquery.jqGrid-4.15.5/js/jquery.jqgrid.min.js"></script>
+<script src="/MSOS/js/MM_function.js"></script>
+<script src="/MSOS/js/common.js"></script>
+<script src="/MSOS/js/setfonts.js"></script>
+<script src="/MSOS/js/contentMenu.js"></script>
+<script src="/MSOS/lib/util/common/util.js"></script>
+<script src="/MSOS/lib/util/common/ajaxCmd.js"></script>
+<script src="/MSOS/js/jquery.qtip.js"></script>
+<script src="/MSOS/js/jquery.blockUI.js"></script>
+<script >var waitMsg = "Please wait"; </script>
+<script src="/MSOS/js/scriptContainer4Acc.js"></script>
+<script src="/MSOS/js/bootstrap.min.js"></script>
+<script>
+$(function(){
+	var bootstrapButton = $.fn.button.noConflict(); 
+	$.fn.bootstrapBtn = bootstrapButton;
+});
+</script>
+
+<!--set fonts-->
+<link id="normalCss" href="/MSOS/css/style_en_m.css" rel="stylesheet" type="text/css" title="Normal Version">
+<script>
+$(function(){
+	/*<input type="hidden" name="struts.token.name" value="token" />
+<input type="hidden" name="token" value="ELFVL1W3VFTBEU0WB9WU3FK0E30CRZIK" />*/
+	
+	var token = "ELFVL1W3VFTBEU0WB9WU3FK0E30CRZIK";
+	
+	$("form").append('<input type="hidden" name="struts.token.name" value="token" />');
+	$("form").append('<input type="hidden" name="token" value="'+token+'"/>');	
+	
+});
+</script>			
+			
+<script src="/MSOS/struts/utils.js" type="text/javascript"></script>
+<script type="text/javascript" src="/MSOS/js/app-widget.js"></script>	</head>
+	<body onload="noBack();"  onunload="" class="">
+		<div>
+			<a href="#rightContent" id="skip-to-content" class="access">Skip To Content</a>
+			<span class="access"> </span>
+		</div>
+		<div><a name="maintop" id="maintop"></a></div>
+		<div id="content"><a id="mt"></a>
+			<div id="head">
+<script>
+function swapFontImage() {
+	// display - swap on or off images
+	var fontarrayLength = fontarray.length;
+	for (i=0;i<fontarrayLength;i++)
+	{		
+		
+		if (displayfonttitle==fontarray[i] ) {
+			// seperate to 2 part, avoid change 'gif' to 'htm' when grab the website"Medium","Large","Extra"
+			if (displayfonttitle == "Small"){
+			fonttail = '<img src="/MSOS/img/en/g_menu/A_s_o.gif" alt="Small" width="15" height="15" style="border:0;" />';
+			}
+			if (displayfonttitle == "Normal"){
+			fonttail = '<img src="/MSOS/img/en/g_menu/A_m_o.gif" alt="Medium" width="15" height="15" style="border:0;" />';
+			}
+			if (displayfonttitle == "Large"){
+			fonttail = '<img src="/MSOS/img/en/g_menu/A_l_o.gif" alt="Large" width="15" height="15" style="border:0;" />';
+			}
+			
+		} else {
+			if (i ==0){
+			fonttail = '<img src="/MSOS/img/en/g_menu/A_s.gif" alt="Small" width="15" height="15" style="border:0;" />';
+			}
+			if (i ==1){
+			fonttail = '<img src="/MSOS/img/en/g_menu/A_m.gif" alt="Medium" width="15" height="15" style="border:0;" />';
+			}
+			if (i ==2){
+			fonttail = '<img src="/MSOS/img/en/g_menu/A_l.gif" alt="Large" width="15" height="15" style="border:0;" />';
+			}
+			//fonttail = 'A';
+		}
+
+		fontimg = 'txtsize_area_Font_' + fontarray[i];
+		var fontImgObj = document.getElementById(fontimg);
+		fontImgObj.innerHTML = fonttail;
+	}
+}
+</script>
+
+<div class='container'>
+<div class='row'>
+<div class='col-md-6'>
+<div class="head_logo"><a href="/MSOS/index" title="Money Service Operators Licensing System " class="app-decor-img"><img src="/MSOS/img/en/g_menu/msos_header_logo.gif" alt="Money Service Operators Licensing System " /></a></div>
+</div>
+<div class='col-md-6'>
+<div class="head_hk_logo"><a href="http://www.brandhk.gov.hk/brandhk/" class="app-decor-img app-target-blank"><img src="/MSOS/img/en/g_menu/brandhk.gif" alt="Brand Hong Kong - Asia's world city" /></a></div>
+</div>
+</div>
+<div class='row'>
 
 
 
-</body></html>
+<div class="col-md-12 head_menu">
+
+
+			<div style='float:right;' >
+			
+	        <div style="height:20px;text-align:center;" ><a href="javascript:addBookmarkForBrowser('Money Service Operators Licensing System ', 'https://eservices.customs.gov.hk/MSOS/');" onmouseout="MM_swapImgRestore()" onfocus="" onblur="" onmouseover="MM_swapImage('mainbar8_I','','/MSOS/img/en/g_menu/g_bookmark_o.gif',1)"  id="mainbar8" class="app-decor-img" rel="11212"><img src="/MSOS/img/en/g_menu/g_bookmark.gif" id="mainbar8_I" alt="Bookmark" width="66" height="19"  /></a></div>
+	        <div style="height:20px;text-align:center;" ><a href="/MSOS/common/sitemap" onmouseout="MM_swapImgRestore()" onfocus="" onblur="" onmouseover="MM_swapImage('mainbar9_I','','/MSOS/img/en/g_menu/g_sitemap_o.gif',1)"  id="mainbar9" class="app-decor-img"><img src="/MSOS/img/en/g_menu/g_sitemap.gif" id="mainbar9_I" width="60" height="20" alt="Site Map" /></a></div>
+	        <div style="height:20px;text-align:center;" ><img src="/MSOS/img/en/g_menu/l_graphic.gif" width="2" height="20" alt="Line Break" /></div>
+	        <div style="height:20px;text-align:center;" ><a href="/MSOS/common/contactus" onmouseout="MM_swapImgRestore()" onblur="" onfocus=""  onmouseover="MM_swapImage('mainbar10_I','','/MSOS/img/en/g_menu/g_let_o.gif',1)"  id="mainbar10" class="app-decor-img"><img src="/MSOS/img/en/g_menu/g_let.gif" id="mainbar10_I" width="36" height="20" alt="Contact us"/></a></div>
+	        <div style="height:20px;text-align:center;" ><img src="/MSOS/img/en/g_menu/l_graphic.gif" width="2" height="20" alt="Line Break" /></div>
+
+	        
+	        <div ><img src="/MSOS/img/en/g_menu/g_textsize.gif" alt="Text Size" ></div>
+			
+		
+		     	<div style="height:20px;text-align:center;" ><a href="javascript:changeFont('Small');"><span id="txtsize_area_Font_Small"><img src="/MSOS/img/en/g_menu/A_s.gif"  style="border:0" alt="Text Size Small" ></span></a></div>
+				<div style="height:20px;text-align:center;" ><a href="javascript:changeFont('Normal');"><span id="txtsize_area_Font_Normal"><img src="/MSOS/img/en/g_menu/A_s.gif"  style="border:0" alt="Text Size Normal" ></span></a></div>
+				<div style="height:20px;text-align:center;" ><a href="javascript:changeFont('Large');"><span id="txtsize_area_Font_Large"><img src="/MSOS/img/en/g_menu/A_s.gif"  style="border:0" alt="Text Size Big" ></span></a></div>
+	       
+	        <div style="height:20px;text-align:center;" >
+		     		     		     		
+			 <script>changeFont(displayfonttitle);</script><script>swapFontImage();</script></div>
+			<div style="height:20px;text-align:center;" ><img src="/MSOS/img/en/g_menu/l_graphic.gif" width="2" height="20" alt="Line Break" ></div>
+			<div style="height:20px;text-align:center;" >
+					<a href="?request_locale=zh_TW"  onmouseout="MM_swapImgRestore()" onfocus="" onblur="" onmouseover="MM_swapImage('mainbar3_I','','/MSOS/img/en/g_menu/lan_tc_o.gif',1)" id="mainbar3" class="app-decor-img"><img src="/MSOS/img/en/g_menu/lan_tc.gif" id="mainbar3_I" width="50" height="20" alt="Language Traditional"/></a>
+					<a href="?request_locale=zh_CN"  onmouseout="MM_swapImgRestore()" onfocus="" onblur="" onmouseover="MM_swapImage('mainbar4_I','','/MSOS/img/en/g_menu/lan_sc_o.gif',1)" id="mainbar4" class="app-decor-img"><img src="/MSOS/img/en/g_menu/lan_sc.gif" id="mainbar4_I" width="50" height="20" alt="Language Simplified"/></a>		
+				
+			</div>
+			</div>
+
+	
+</div>
+
+
+</div>
+</div>
+
+			</div>
+			
+			<div style="clear:both"></div>
+			<div style="background:#2b8b00;height:6px; max-height:6px;margin-bottom:5px;overflow:hidden;"></div>
+
+			<div class='container'>
+				<div id="bodyContent"  class='row'>
+					<div id="leftContent" class='col-md-2 col-12'>
+<script>
+ 
+    $(document).ready(function(){ 
+        $("#app-contentMenu").superfish(); 
+    }); 
+ 
+</script>
+
+
+<nav class="navbar-expand-md">
+<div class="leftContent_main container-fluid flex-column">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggler ml-auto float-right" data-bs-toggle="collapse" data-bs-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path></svg>                                        
+		</button>
+		<!--<a class="navbar-brand" href="/MSOS/index" ><span class="glyphicon glyphicon-home" style="color:green"></span>&nbsp;&nbsp;Home</a>-->
+		<div class="navbar-brand"></div>
+	</div>
+ 
+    <div class="collapse navbar-collapse" id="myNavbar">
+	<ul id="app-contentMen" class="navbar-nav flex-column" style="display: inline-block; width:100%;">
+	  <li class="nav-item"><a class="nav-link" href="/MSOS/index">Home</a></li>
+	  
+	 
+	  	
+         <li class="nav-item"><a class="nav-link" href="/MSOS/common/msotitle">Online Functions for Money Service Operators (MSOs)</a>
+		  </li>
+	 
+	 
+	  
+	  <li class="nav-item"><a class="nav-link" href="/MSOS/wsrh/001s0">Licensed Money Service Operators</a>
+	  	
+	  </li>
+	  <li class="nav-item"><a class="nav-link" href="/MSOS/common/guidelines">Guidelines</a>
+	  
+	  </li>
+	  <li class="nav-item"><a class="nav-link" href="/MSOS/common/licissus">Licensing Issues </a>
+	  </li>
+	  <li class="nav-item"><a class="nav-link" href="/MSOS/common/enforcenew">Enforcement News</a></li>
+	  <li class="nav-item"><a class="nav-link" href="/MSOS/common/legislation">Legislation</a></li>
+	  <li class="nav-item"><a class="nav-link" href="/MSOS/common/onlinedemo">Online Demonstration</a>
+	  </li> 
+	  <li class="nav-item"><a class="nav-link" href="/MSOS/common/forms">Forms</a>
+	  </li>
+	  <li class="nav-item"><a class="nav-link" href="/MSOS/common/whatsnew">Publications and Notices</a>
+	  </li>
+	  <li class="nav-item"><a class="nav-link" href="/MSOS/common/infocorner">Information Corner</a></li>
+	  <li class="nav-item"><a class="nav-link" href="/MSOS/common/links">Links</a></li>
+	  <li class="nav-item"><a class="nav-link" href="/MSOS/common/faqs">FAQs</a></li>
+	  <li class="nav-item"><a class="nav-link" href="/MSOS/common/contactus">Contact us</a></li>
+	</ul>
+	</div>
+	<div class="leftContent_menu_icon">
+		<div class='container'>
+			<div class='row'>
+				<div class='col-md-12 col-6'>
+					<a onclick="window.open(this.href);return false;" href="http://www.jfiu.gov.hk/"  title="Joint Financial Intelligence Unit" class="app-decor-img"><img src="/MSOS/img/en/icon_JFIU.jpg" alt="Joint Financial Intelligence Unit" style='max-height:59px; max-width:160px;width:100%;'/></a>
+				</div>
+				<div class='col-md-12 col-6'>
+					<a onclick="window.open(this.href);return false;" href="http://www.fstb.gov.hk/" title="Financial Services and the Treasury Bureau"  class="app-decor-img"><img src="/MSOS/img/en/icon_FSTB.jpg" alt="Financial Services and the Treasury Bureau" style='max-height:59px; max-width:160px;width:100%;'/></a>
+				</div>
+				
+				<div class='col-md-12 col-6'>
+					<img src="/MSOS/img/en/EffO-140x50.jpg" alt="" style='max-height:59px; max-width:160px;width:100%;'/>
+				</div>
+				
+			</div>
+						
+		</div>
+	</div>
+</div>
+</nav>					</div>
+					
+					<div id="rightContent"  class='col-md-10 col-12'><a></a>
+						<div class="rightContent_top"></div>
+						<div class="rightContent_main">
+							
+							<div id="contentMain">
+								
+									<div class="contentMain_header">
+											<span>System Message</span>
+									</div>
+									<div class="contentMain_nav"><a href="/MSOS/index">Home</a> > System Message</div>
+								<div class="clear"></div>
+								<div class="contentMain_body">
+		
+
+
+	<p>
+		<span class="contenttext">
+			There was a temporary problem when processing your request, please try again later. If problem persists, please record this reference ID (ID: 1701013717274-7074) and report the problem to us.
+		</span>
+	</p>
+	<p>
+		<span class="contenttext">
+		</span>
+	</p>
+	
+								</div>							
+							</div>						
+						</div>
+						<div class="clear"></div>
+						<div class="rightContent_bottom"><div class='container' style='margin:5px; padding:5px; width:100%'>
+
+	<div class='row'>
+		<div class="col-7 text_footer ">
+			2012 &copy; |
+			<a href="/MSOS/common/imptnotice">Important Notice</a>
+			|
+			<a href="/MSOS/common/security">Security Statement</a>
+			|
+			<a href="http://www.customs.gov.hk/en/privacy-policy/index.html" class="app-target-blank" title="Open in new window-Privacy Policy">Privacy Policy</a>
+			
+		</div>
+		<div class="col-4 text_footer ">&nbsp;</div>
+		<div style="text-align:right" class="col-1 text_footer "><a href="#maintop">Top</a></div>
+	</div>
+
+</div></div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	<p class="ns4"><a href="#mt">Skip to main content</a></p></body>
+	</html>
+
