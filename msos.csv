@@ -65,9 +65,9 @@ $(function(){
 <script>
 $(function(){
 	/*<input type="hidden" name="struts.token.name" value="token" />
-<input type="hidden" name="token" value="774F5P4893DDFBRLA08PUWTZX6TIJE84" />*/
+<input type="hidden" name="token" value="EFZDT21Y7FTNQ5A5Y0KN7A2AJ4TP4EGB" />*/
 	
-	var token = "774F5P4893DDFBRLA08PUWTZX6TIJE84";
+	var token = "EFZDT21Y7FTNQ5A5Y0KN7A2AJ4TP4EGB";
 	
 	$("form").append('<input type="hidden" name="struts.token.name" value="token" />');
 	$("form").append('<input type="hidden" name="token" value="'+token+'"/>');	
